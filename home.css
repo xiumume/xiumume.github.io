@@ -1,0 +1,46 @@
+body{
+    background-color: antiquewhite;
+    margin: 0 2%;
+}
+#top-Box{
+    margin: 0;
+}
+#top-Box p{
+    margin-left: 5px;
+    margin-top: 0;
+}
+#webName{
+    margin: 5px 5px 0 5px;
+    font-weight: 300;
+    font-size: 24px;
+    color:slategray;
+}
+#tools-Outbox{
+    box-shadow: 12px 12px 25px rgb(55, 55, 55);
+    border-radius: 15px;
+    background-color: white;
+    margin: 150px auto;
+    width: 550px;
+    height: 300px;
+}
+#tools-Inbox{
+    margin: 0px auto; 
+    width: fit-content;
+}
+#display-Text{
+    margin: 0 50px;
+    padding: 90px 0 0 0;
+    font-size: 64px;
+}
+#named-Mian{
+    background-color: slategrey;
+    border-style: none;
+    border-radius: 15px;
+    float: right;
+    margin: 50px 7px;
+    padding: 10px 35px;
+}
+#named-Mian:hover{
+    background-color:rgb(37, 52, 68);
+    color: white;
+}
