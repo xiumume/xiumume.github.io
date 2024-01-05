@@ -33,7 +33,7 @@ body{
     font-size: 64px;
 }
 #named-Mian{
-    background-color: slategrey;
+    background-color: rgb(0, 97, 194);
     border-style: none;
     border-radius: 15px;
     float: right;
@@ -41,6 +41,31 @@ body{
     padding: 10px 35px;
 }
 #named-Mian:hover{
-    background-color:rgb(37, 52, 68);
+    background-color:rgb(18, 43, 71);
     color: white;
+}
+
+#named-Mian-input{
+    background-color: rgb(224, 160, 21);
+    border-style: none;
+    border-radius: 15px;
+    float: right;
+    margin: 50px 7px;
+    padding: 10px 35px;
+}
+#named-Mian-input:hover{
+    background-color:rgb(151, 102, 5);
+    color: white;
+}
+
+#file{
+    display: none;
+}
+
+#file-Mian{
+    border-style: none;
+    border-radius: 15px;
+    float: left;
+    margin: 50px 7px;
+    padding: 10px 35px;
 }

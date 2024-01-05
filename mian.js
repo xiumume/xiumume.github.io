@@ -1,20 +1,20 @@
 //以下代码著作权归 朽木自雕 所有
 //2022年12月23日
 var sum = []; var temp = 0; let Data = ""; var displaytext = "";
-function mian() {
-    fetch('./name.json')
-        .then(
-            function (response) {
-                return response.json();
-            }
-        )
-        .then(
-            function (myJson) {
-                console.log(myJson);
-                Data = myJson;
-                myNum(myJson.length, 0, myJson.length - 1);
-            }
-        )
+function inputFile(files) {
+    if (files.length) {
+        let file = files[0];
+        let reader = new FileReader();
+        reader.onload = function () {
+            var mytempjson = JSON.parse(this.result);
+            mian(mytempjson);
+        };
+        reader.readAsText(file);
+    }
+}
+function mian(json) {
+    Data = json;
+    myNum(Data.length, 0, Data.length - 1);
     console.log("初始化中...");
 }
 function selectFrom(min, max) {

@@ -19,9 +19,14 @@
             <h2 id="display-Text">欢迎使用</h2>
         </div>
         <br>
-        <button id="named-Mian" onclick="button1()">开始点名</button>
+        <div>
+            <button id="named-Mian" onclick="button1()">开始点名</button>
+            <button id="named-Mian" onclick="document.getElementById('file').click()">导入名单</button>
+            <input type="file" id="file" onchange="inputFile(this.files)" />
+        </div>
     </div>
-    <script>mian()</script>
 </body>
 
 </html>
+
+    
