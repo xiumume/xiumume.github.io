@@ -15,7 +15,6 @@ function inputFile(files) {
 function mian(json) {
     Data = json;
     myNum(Data.length, 0, Data.length - 1);
-    console.log("初始化中...");
 }
 function selectFrom(min, max) {
     var sum = max - min + 1;
@@ -32,14 +31,17 @@ function myNum(n, min, max) {
         }
     }
     displaytext = document.getElementById("display-Text");
-    console.log("初始化完毕。");
+    displaytext.innerHTML = "导入成功！"
 }
 function button1() {
+if (Data == "") {
+    window.alert("您需要导入一个名单才能点哦！");
+}else{
     displaytext.innerHTML = Data[sum[temp]].name;
     temp = temp + 1;
     if (temp > Data.length - 1) {
-        console.log("点名已结束，准备重新初始化数据。");
         mian();
         temp = 0;
     }
+}
 }

@@ -1,71 +1,90 @@
-body{
-    background-color: antiquewhite;
+/*
+Xiumu-Me Named tool BY Css
+*/
+
+/* bat */
+body {
+    background-color: rgb(255, 221, 176);
     margin: 0 2%;
 }
-#top-Box{
+
+/* Class */
+.named-Mian {
+
+    background-color: rgb(77, 166, 255);
+    border-style: none;
+    border-radius: 10px;
+    float: right;
+    margin: 50px 7px;
+    padding: 10px 35px;
+}
+.named-Mian-a{
+display: none;
+}
+
+.named-Mian:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* ID */
+
+#top-Box {
+    padding-top: 10PX;
     margin: 0;
 }
-#top-Box p{
+
+#top-Box p {
     margin-left: 5px;
     margin-top: 0;
 }
-#webName{
+
+#top-div a {
+    padding: 0;
+    margin: 0;
+}
+
+#webName {
     margin: 5px 5px 0 5px;
     font-weight: 300;
     font-size: 24px;
-    color:slategray;
+    color: rgb(0, 128, 255);
+    text-decoration: none;
 }
-#tools-Outbox{
+
+#tools-Outbox {
     box-shadow: 12px 12px 25px rgb(55, 55, 55);
     border-radius: 15px;
     background-color: white;
-    margin: 150px auto;
-    width: 550px;
+    margin: 120px auto 50px auto;
+    width: 600px;
     height: 300px;
 }
-#tools-Inbox{
-    margin: 0px auto; 
+
+#tools-Inbox {
+    margin: 0px auto;
     width: fit-content;
 }
-#display-Text{
+
+#display-Text {
     margin: 0 50px;
     padding: 90px 0 0 0;
     font-size: 64px;
 }
-#named-Mian{
-    background-color: rgb(0, 97, 194);
-    border-style: none;
-    border-radius: 15px;
-    float: right;
-    margin: 50px 7px;
-    padding: 10px 35px;
-}
-#named-Mian:hover{
-    background-color:rgb(18, 43, 71);
-    color: white;
-}
 
-#named-Mian-input{
-    background-color: rgb(224, 160, 21);
-    border-style: none;
-    border-radius: 15px;
-    float: right;
-    margin: 50px 7px;
-    padding: 10px 35px;
-}
-#named-Mian-input:hover{
-    background-color:rgb(151, 102, 5);
-    color: white;
-}
 
-#file{
+#file {
     display: none;
 }
-
-#file-Mian{
+#named-Mian-create{
+    background-color: rgb(142, 142, 142);
     border-style: none;
-    border-radius: 15px;
-    float: left;
+    border-radius: 10px;
+    float: right;
     margin: 50px 7px;
     padding: 10px 35px;
+}
+#named-Mian-create:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
 }

@@ -11,22 +11,22 @@
 <body>
     <script src="./mian.js"></script>
     <div id="top-Box">
-        <h2 id="webName">朽木自雕网页点名工具</h1>
-            <p>本工具使用html5与JavaScript技术开发,著作权归朽木自雕所有。</p>
+            <a id="webName" href="https://github.com/xiumume/xiumume.github.io" alt="" id="top-div" >朽木自雕网页点名工具</a>
+            <p>使用html5与JavaScript实现,著作权归朽木自雕所有。</p>
     </div>
     <div id="tools-Outbox">
         <div id="tools-Inbox">
-            <h2 id="display-Text">欢迎使用</h2>
+            <h2 id="display-Text">Welcome</h2>
         </div>
+        <a id="create" class="named-Mian-a" href="./create/">创建名单</a>
         <br>
         <div>
-            <button id="named-Mian" onclick="button1()">开始点名</button>
-            <button id="named-Mian" onclick="document.getElementById('file').click()">导入名单</button>
+            <button class="named-Mian" onclick="button1()">开始点名</button>
+            <button class="named-Mian" onclick="document.getElementById('file').click()">导入名单</button>
+            <button id="named-Mian-create" onclick="document.getElementById('create').click()">创建名单</button>
             <input type="file" id="file" onchange="inputFile(this.files)" />
         </div>
     </div>
 </body>
 
 </html>
-
-    
