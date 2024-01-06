@@ -8,6 +8,8 @@ function inputFile(files) {
         reader.onload = function () {
             mytempjson = JSON.parse(this.result);
             mian(mytempjson);
+            displaytext = document.getElementById("display-Text");
+            displaytext.innerHTML = "导入成功！"
         };
         reader.readAsText(file);
     }
@@ -30,8 +32,6 @@ function myNum(n, min, max) {
             }
         }
     }
-    displaytext = document.getElementById("display-Text");
-    displaytext.innerHTML = "导入成功！"
 }
 function button1() {
 if (Data == "") {
@@ -41,6 +41,7 @@ if (Data == "") {
     temp = temp + 1;
     if (temp > Data.length - 1) {
         mian(mytempjson);
+        console.log(mytempjson);
         temp = 0;
     }
 }
