@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>创建您的json表单</title>
+    <link rel="stylesheet" href="./create.css">
 </head>
+
 <body>
-      
+    <div id="top-div">
+        <script src="./create.js"></script>
+        <h2>工作须知</h2>
+        <p>
+            所谓的json文件格式如下图所示：
+            <br>您可以通过您的电脑打开记事本工具直接按照json文件格式来编辑你的名单。
+            <br>不过，考虑这样做效率不高，我们提供了编辑框，您只需要将需要的名字复制到我们为您提供的编
+            <br>辑框中，遵循一个名字换一行的规则，我们将为您输出一个json文件格式，但是您还是需要自己新
+            <br>建文件来存储这些数据。我们无法远程在您的电脑上新建文件，这为了您的安全。
+        </p>
+        <img id="help" src="./help.jpg" alt="">
+        <br>
+        <textarea id="val" rows="10" cols="100" value="">名字(每行仅代表一个名字。)</textarea>
+        <br>
+        <textarea id="print" rows="10" cols="100" value="">结果(您需要自行复制文本中，保存为json后缀的文件才能到导入使用。)</textarea>
+        <br>
+        <a id="quit" href="../">quit</a>
+        <button id="button1" onclick="document.getElementById('quit').click()">返回</button>
+        <button id="button1" onclick="create()">生成</button>
+    </div>
 </body>
+
 </html>
