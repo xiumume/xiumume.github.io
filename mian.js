@@ -1,12 +1,12 @@
 //以下代码著作权归 朽木自雕 所有
 //2022年12月23日
-var sum = []; var temp = 0; let Data = ""; var displaytext = "";
+var mytempjson;var sum = []; var temp = 0; let Data = ""; var displaytext = "";
 function inputFile(files) {
     if (files.length) {
         let file = files[0];
         let reader = new FileReader();
         reader.onload = function () {
-            var mytempjson = JSON.parse(this.result);
+            mytempjson = JSON.parse(this.result);
             mian(mytempjson);
         };
         reader.readAsText(file);
@@ -40,7 +40,7 @@ if (Data == "") {
     displaytext.innerHTML = Data[sum[temp]].name;
     temp = temp + 1;
     if (temp > Data.length - 1) {
-        mian();
+        mian(mytempjson);
         temp = 0;
     }
 }
