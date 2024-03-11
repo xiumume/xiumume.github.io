@@ -1,5 +1,3 @@
-//以下代码著作权归 朽木自雕 所有
-//2022年12月23日
 var mytempjson;var sum = []; var temp = 0; let Data = ""; var displaytext = "";
 function inputFile(files) {
     if (files.length) {
@@ -9,7 +7,7 @@ function inputFile(files) {
             mytempjson = JSON.parse(this.result);
             mian(mytempjson);
             displaytext = document.getElementById("display-Text");
-            displaytext.innerHTML = "导入成功！"
+            displaytext.innerHTML = "input[OK]"
         };
         reader.readAsText(file);
     }
@@ -41,7 +39,6 @@ if (Data == "") {
     temp = temp + 1;
     if (temp > Data.length - 1) {
         mian(mytempjson);
-        console.log(mytempjson);
         temp = 0;
     }
 }
