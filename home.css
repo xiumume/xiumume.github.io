@@ -14,7 +14,7 @@ body {
     border-style: none;
     border-radius: 10px;
     float: right;
-    margin: 50px 7px;
+    margin: 30px 7px 7px 7px;
     padding: 10px 35px;
 }
 .named-Mian-a{
@@ -26,7 +26,21 @@ display: none;
     color: white;
 }
 
+
 /* ID */
+
+#named-Mian-create{
+    background-color: rgb(142, 142, 142);
+    border-style: none;
+    border-radius: 10px;
+    float: right;
+    margin: 30px 7px 7px 7px;
+    padding: 10px 35px;
+}
+#named-Mian-create:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
 
 #top-Box {
     padding-top: 10PX;
@@ -41,6 +55,10 @@ display: none;
 #top-div a {
     padding: 0;
     margin: 0;
+}
+
+#reutrn-text{
+    margin:0px 20px;
 }
 
 #webName {
@@ -74,16 +92,4 @@ display: none;
 
 #file {
     display: none;
-}
-#named-Mian-create{
-    background-color: rgb(142, 142, 142);
-    border-style: none;
-    border-radius: 10px;
-    float: right;
-    margin: 50px 7px;
-    padding: 10px 35px;
-}
-#named-Mian-create:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
 }

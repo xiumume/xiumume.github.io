@@ -1,4 +1,4 @@
-var mytempjson;var sum = []; var temp = 0; let Data = ""; var displaytext = "";
+var mytempjson; var sum = []; var temp = 0; let Data = ""; var displaytext = ""; var reutrn = "";
 function inputFile(files) {
     if (files.length) {
         let file = files[0];
@@ -6,8 +6,9 @@ function inputFile(files) {
         reader.onload = function () {
             mytempjson = JSON.parse(this.result);
             mian(mytempjson);
+            reutrn = document.getElementById("reutrn-text")
             displaytext = document.getElementById("display-Text");
-            displaytext.innerHTML = "input[OK]"
+            reutrn.innerHTML = "导入成功，人数为" + Data.length + "人。"
         };
         reader.readAsText(file);
     }
@@ -32,14 +33,16 @@ function myNum(n, min, max) {
     }
 }
 function button1() {
-if (Data == "") {
-    window.alert("您需要导入一个名单才能点哦！");
-}else{
-    displaytext.innerHTML = Data[sum[temp]].name;
-    temp = temp + 1;
-    if (temp > Data.length - 1) {
-        mian(mytempjson);
-        temp = 0;
+    reutrn = document.getElementById("reutrn-text")
+    if (Data == "") {
+        reutrn.innerHTML = "您需导入名单才能点名！你可以点击下方“创建名单”按钮来创建名单。";
+    } else {
+        displaytext.innerHTML = Data[sum[temp]].name;
+        temp = temp + 1;
+        if (temp > Data.length - 1) {
+            mian(mytempjson);
+            temp = 0;
+        }
     }
 }
-}
+
