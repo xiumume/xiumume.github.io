@@ -1,0 +1,45 @@
+#updata{
+    float: left;
+    width: 14vw;
+    height: 98vh;
+    background-color:slategrey;
+    border-radius: 15px;
+}
+#office{
+    float: left;
+    width: 85vw;
+    height: 98vh;
+}
+#namesystem{
+    text-align: center;
+    margin-top: 35vh;
+    font-size: 50px;
+    color:  rgb(77, 77, 255);
+}
+#buttdiv{
+    margin: 50vh 15px 0 0 ;
+}
+#reutrn-text{
+    overflow-y: scroll; /* 增加垂直滚动条 */
+    height: 92vh; /* 固定高度，超过此高度将出现滚动条 */
+    font-size: 16px;
+    text-align: center;
+}
+
+#file {
+    display: none;
+}
+
+.buttonclass{
+    color:white;
+    float: right;
+    margin: 0 10px;
+    background-color: rgb(77, 77, 255);
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+}
+.buttonclass:hover{
+    background-color: rgb(39, 39, 147);
+}

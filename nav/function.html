@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./FuncFiles/func.css">
+</head>
+
+<body>
+    <script src="./FuncFiles/func.js"></script>
+    <div id="updata">
+        <div>
+            <p id="reutrn-text">未上传名单</p>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div id="office">
+        <div>
+            <div id="namesystem">
+                <p id="display-Text">你好</p>
+            </div>
+            <div id="buttdiv">
+                <button class="buttonclass" onclick="button1()">开始点名</button>
+                <button class="buttonclass" onclick="document.getElementById('file').click()">导入名单</button>
+            </div>
+            <input type="file" id="file" onchange="inputFile(this.files)"/>
+        </div>
+    </div>
+
+</body>
+
+</html>

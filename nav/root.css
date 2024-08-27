@@ -1,0 +1,21 @@
+body {
+    margin: 10px 0 0 0;
+}
+
+.bigplay {
+    width: 100vw;
+    border-radius: 15px;
+}
+.easyinfo {
+    float: left;
+    width: 41vw;
+
+}
+
+h3 {
+    color: rgb(77, 77, 255);
+}
+.info {
+    float: right;
+    width: 47vw;
+}

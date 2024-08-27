@@ -1,0 +1,25 @@
+#myIframe {
+    height: 92vh;
+    width: 100%;
+    border: none;
+}
+
+
+body {
+    margin: 12px 12px;
+}
+
+.nav {
+    color: white;
+    text-decoration: none;
+    padding-top: 100px;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.navdiv {
+    height: 30px;
+    background-color: rgb(77, 77, 255);
+    text-align: center;
+    border-radius: 15px;
+}

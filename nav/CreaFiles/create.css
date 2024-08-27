@@ -1,0 +1,54 @@
+#top-div {
+    box-shadow: 12px 12px 25px rgb(55, 55, 55);
+    width: fit-content;
+    padding: 10px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#top-div h2 {
+    margin: 0;
+    font-weight: 300;
+}
+
+#top-div p {
+    margin: 0 0 10px 0;
+}
+
+#help {
+    width: 688px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#val {
+    background-color: slategrey;
+    width: 98vw;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#print {
+    background-color: slategrey;
+    width: 98vw;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#button1 {
+    color: white;
+    float: right;
+    margin: 0 10px;
+    background-color: rgb(77, 77, 255);
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+}
+
+#button1:hover {
+    background-color: rgb(39, 39, 147);
+}
