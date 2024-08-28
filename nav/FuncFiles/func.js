@@ -1,4 +1,4 @@
-var mytempjson; var sum = []; var temp = 0; let Data = ""; var displaytext = ""; var reutrn = "";
+var mytempjson; var sum = []; var temp = 0; let Data = ""; var displaytext = ""; var reutrn = ""; var pmax = 0;
 
 function inputFile(files) {
     if (files.length) {
@@ -7,13 +7,16 @@ function inputFile(files) {
         reader.onload = function () {
             mytempjson = JSON.parse(this.result);
             mian(mytempjson);
+            printtext = document.getElementById("print-text")
             reutrn = document.getElementById("reutrn-text");
             displaytext = document.getElementById("display-Text");
             let namesText = '';
             if (Data && Data.length) {
                 namesText = Data.map(item => item.name).join('<br><br>');
+                pmax = pmax + 1
             }
             reutrn.innerHTML = namesText;
+            printtext.innerHTML = pmax;
         };
         reader.readAsText(file);
     }

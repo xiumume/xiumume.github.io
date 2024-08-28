@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh_cn">
 
 <head>
     <meta charset="UTF-8">
@@ -24,9 +24,10 @@
                 <p id="display-Text">你好</p>
             </div>
             <div id="buttdiv">
-                <button class="buttonclass" onclick="button1()">开始点名</button>
-                <button class="buttonclass" onclick="document.getElementById('file').click()">导入名单</button>
+                <button class="button-style" onclick="button1()">开始点名</button>
+                <button class="button-style" onclick="document.getElementById('file').click()">导入名单</button>
             </div>
+            <span id="print-text">状态：未导入名单</span>
             <input type="file" id="file" onchange="inputFile(this.files)"/>
         </div>
     </div>

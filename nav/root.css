@@ -6,6 +6,7 @@ body {
     width: 100vw;
     border-radius: 15px;
 }
+
 .easyinfo {
     float: left;
     width: 41vw;
@@ -15,7 +16,24 @@ body {
 h3 {
     color: rgb(77, 77, 255);
 }
+
 .info {
     float: right;
     width: 47vw;
+}
+
+.button-style {
+    color: white;
+    float: right;
+    margin: 0 10px;
+    background-color: rgb(77, 77, 255);
+    padding: 5px 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: rgb(39, 39, 147);
 }
